@@ -24,8 +24,8 @@ logger = logging.getLogger(__name__)
 # تنظیمات پیش‌فرض
 CONFIG_FILE = "bot_config.json"
 DEFAULT_CONFIG = {
-    "host_usernames": ["ad0ri"],
-    "admin_usernames": ["ad0ri"],
+    "host_usernames": ["NAMIRA.2"],
+    "admin_usernames": ["NAMIRA.2"],
     "vip_usernames": [],
     "banned_users": [],
     "teleport_locations": {
@@ -2784,15 +2784,15 @@ async def main():
     from http.server import BaseHTTPRequestHandler, HTTPServer
     
     logger.info("تلاش برای بارگذاری متغیرهای محیطی...")
-    room_id = os.getenv("ROOM_ID", "68e771922d585712212e8070")
-    api_token = os.getenv("API_TOKEN", "9e7c0961d04f51d5c9261b216f4367cc6f8b063fab79ad190adb40020498757c")
+    room_id = os.getenv("ROOM_ID", "68a6d220180f3486d6a3d105")
+    api_token = os.getenv("API_TOKEN", "6ab5629780520a6574bd16a4")
     
     if not room_id or not api_token:
         logger.error("ROOM_ID یا API_TOKEN تنظیم نشده‌اند.")
         return
     
-    logger.info(f"ROOM_ID: {room_id}")
-    logger.info(f"API_TOKEN: {api_token}")
+    logger.info(f"ROOM_ID: {68a6d220180f3486d6a3d105}")
+    logger.info(f"API_TOKEN: {6ab5629780520a6574bd16a4}")
 
     # ساختار وب‌سرور داخلی و سبک پایتون
     class PingHandler(BaseHTTPRequestHandler):
